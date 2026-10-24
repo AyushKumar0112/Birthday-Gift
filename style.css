@@ -221,3 +221,52 @@ p {
   opacity: 0.3;
   z-index: -1;
 }
+.Gift_Page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.video5 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.gifts {
+  margin-top: 50px;
+  display: flex;
+  gap: 45px;
+}
+.gift {
+  width: 250px;
+  height: 250px;
+}
+.gift:hover {
+  width: 255px;
+  height: 255px;
+  animation: ease-in 0.3;
+  opacity: 0.5;
+}
+h3 {
+  color: rgb(136, 169, 196);
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 13%;
+  margin-right: 100px;
+}
+.Gift_Page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("image7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}

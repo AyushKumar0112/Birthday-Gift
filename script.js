@@ -9,6 +9,7 @@ let currentIndex = 0;
 document.querySelector(".Incorrect_passcode").style.display = "none";
 document.querySelector(".No_Page").style.display = "none";
 document.querySelector(".Exciting_Page").style.display = "none";
+document.querySelector(".Gift_Page").style.display = "none";
 
 function updateUI() {
   for (let i = 0; i < 4; i++) {
@@ -85,15 +86,19 @@ function triggerNextScreen() {
 }
 
 const NO = document.querySelector(".no");
-
 NO.addEventListener("click", () => {
   document.querySelector(".Exciting_Page").style.display = "none";
   document.querySelector(".No_Page").style.display = "flex";
 });
 
 const Back = document.querySelector(".please");
-
 Back.addEventListener("click", () => {
   document.querySelector(".No_Page").style.display = "none";
   document.querySelector(".Exciting_Page").style.display = "flex";
+});
+
+const YES = document.querySelector(".yes");
+YES.addEventListener("click", () => {
+  document.querySelector(".Exciting_Page").style.display = "none";
+  document.querySelector(".Gift_Page").style.display = "flex";
 });
