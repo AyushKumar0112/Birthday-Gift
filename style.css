@@ -239,11 +239,20 @@ p {
   display: flex;
   gap: 45px;
 }
-.gift {
+.gift1,
+.gift2,
+.gift3,
+.gift4 {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  overflow: hidden;
   width: 250px;
   height: 250px;
 }
-.gift:hover {
+.gift1:hover,
+.gift2:hover,
+.gift3:hover,
+.gift4:hover {
   width: 255px;
   height: 255px;
   animation: ease-in 0.3;
@@ -269,4 +278,184 @@ h3 {
   background-repeat: no-repeat;
   opacity: 0.3;
   z-index: -1;
+}
+.Gift1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 10%;
+  border: 1px solid rgb(196, 135, 65);
+  border-radius: 20px;
+  width: 80%;
+  height: 570px;
+  background-color: rgb(196, 135, 65);
+}
+.Gift1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("image5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fs);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.cross {
+  position: absolute;
+  margin-left: 1000px;
+  margin-bottom: 70px;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+span {
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  margin: 10px;
+  font-size: 3rem;
+}
+.photo1,
+.photo3,
+.photo5,
+.photo7,
+.photo9 {
+  width: 200px;
+  height: 250px;
+  margin: 30px 50px;
+  opacity: 0.6;
+  filter: blur(3px);
+  transition: all 0.4s ease;
+  border: 7px solid white;
+  border-bottom: 40px solid white;
+  transform: rotate(5deg);
+}
+.photo2,
+.photo4,
+.photo6,
+.photo8 {
+  width: 200px;
+  height: 250px;
+  margin: 30px 50px;
+  opacity: 0.6;
+  filter: blur(3px);
+  transition: all 0.4s ease;
+  border: 7px solid white;
+  border-bottom: 40px solid white;
+  transform: rotate(-5deg);
+}
+.photo_section {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  width: 100%;
+  height: 420px;
+  background-color: rgb(132, 89, 33);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.photo1:hover,
+.photo2:hover,
+.photo3:hover,
+.photo4:hover,
+.photo5:hover,
+.photo6:hover,
+.photo7:hover,
+.photo8:hover,
+.photo9:hover {
+  opacity: 1;
+  filter: blur(0px) brightness(1.05);
+  transform: translateY(-5px) scale(1.05);
+}
+.Gift2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 10%;
+  border: 1px solid rgb(123, 97, 196);
+  border-radius: 20px;
+  width: 80%;
+  height: 570px;
+  background-color: rgb(123, 97, 196);
+}
+.Gift2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("image8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+.place1,
+.place3,
+.place5,
+.place7,
+.place9 {
+  width: 200px;
+  height: 250px;
+  margin: 30px 50px;
+  opacity: 0.6;
+  filter: blur(3px);
+  transition: all 0.4s ease;
+  border: 7px solid white;
+  border-bottom: 40px solid white;
+  transform: rotate(-5deg);
+}
+.place2,
+.place4,
+.place6,
+.place8 {
+  width: 200px;
+  height: 250px;
+  margin: 30px 50px;
+  opacity: 0.6;
+  filter: blur(3px);
+  transition: all 0.4s ease;
+  border: 7px solid white;
+  border-bottom: 40px solid white;
+  transform: rotate(5deg);
+}
+.place_section {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  width: 100%;
+  height: 420px;
+  background-color: rgb(107, 53, 132);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.place1:hover,
+.place2:hover,
+.place3:hover,
+.place4:hover,
+.place5:hover,
+.place6:hover,
+.place7:hover,
+.place8:hover,
+.place9:hover {
+  opacity: 1;
+  filter: blur(0px) brightness(1.05);
+  transform: translateY(-5px) scale(1.05);
 }

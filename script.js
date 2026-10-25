@@ -10,6 +10,8 @@ document.querySelector(".Incorrect_passcode").style.display = "none";
 document.querySelector(".No_Page").style.display = "none";
 document.querySelector(".Exciting_Page").style.display = "none";
 document.querySelector(".Gift_Page").style.display = "none";
+document.querySelector(".Gift1").style.display = "none";
+document.querySelector(".Gift2").style.display = "none";
 
 function updateUI() {
   for (let i = 0; i < 4; i++) {
@@ -62,6 +64,8 @@ function validatePasscode() {
     document.querySelector(".No_Page").style.display = "none";
     document.querySelector(".Incorrect_passcode").style.display = "flex";
     document.querySelector(".Gift_Page").style.display = "none";
+    document.querySelector(".Gift1").style.display = "none";
+    document.querySelector(".Gift2").style.display = "none";
   }
 }
 
@@ -83,12 +87,16 @@ function triggerNextScreen() {
   document.querySelector(".No_Page").style.display = "none";
   document.querySelector(".Exciting_Page").style.display = "flex";
   document.querySelector(".Gift_Page").style.display = "none";
+  document.querySelector(".Gift1").style.display = "none";
+  document.querySelector(".Gift2").style.display = "none";
 }
 
 const NO = document.querySelector(".no");
 NO.addEventListener("click", () => {
   document.querySelector(".Exciting_Page").style.display = "none";
   document.querySelector(".No_Page").style.display = "flex";
+  document.querySelector(".Gift1").style.display = "none";
+  document.querySelector(".Gift2").style.display = "none";
 });
 
 const Back = document.querySelector(".please");
@@ -101,4 +109,29 @@ const YES = document.querySelector(".yes");
 YES.addEventListener("click", () => {
   document.querySelector(".Exciting_Page").style.display = "none";
   document.querySelector(".Gift_Page").style.display = "flex";
+  document.querySelector(".Gift1").style.display = "none";
+  document.querySelector(".Gift2").style.display = "none";
+});
+
+const Gift1 = document.querySelector(".gift1");
+Gift1.addEventListener("click", () => {
+  document.querySelector(".Gift_Page").style.display = "none";
+  document.querySelector(".Gift1").style.display = "flex";
+  document.querySelector(".Gift2").style.display = "none";
+});
+
+const Gift2 = document.querySelector(".gift2");
+Gift2.addEventListener("click", () => {
+  document.querySelector(".Gift_Page").style.display = "none";
+  document.querySelector(".Gift1").style.display = "none";
+  document.querySelector(".Gift2").style.display = "flex";
+});
+
+const close = document.querySelectorAll(".cross");
+close.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".Gift_Page").style.display = "flex";
+    document.querySelector(".Gift1").style.display = "none";
+    document.querySelector(".Gift2").style.display = "none";
+  });
 });
