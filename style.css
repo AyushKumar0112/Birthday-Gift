@@ -459,3 +459,188 @@ span {
   filter: blur(0px) brightness(1.05);
   transform: translateY(-5px) scale(1.05);
 }
+.Gift3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 10%;
+  border: 1px solid rgb(97, 196, 156);
+  border-radius: 20px;
+  width: 80%;
+  height: 570px;
+  background-color: rgb(97, 196, 156);
+}
+.Gift3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("image6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+.wish {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(57, 54, 54);
+}
+.cake {
+  width: 650px;
+  height: 550px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.Birthday_wish {
+  color: rgb(49, 38, 38);
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+}
+.Gift4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 10%;
+  border: 1px solid rgb(190, 72, 143);
+  border-radius: 20px;
+  width: 80%;
+  height: 570px;
+  background-color: rgb(190, 72, 143);
+}
+.Gift4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("image9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+.birthday_gift {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(66, 229, 25);
+}
+.Gift4_content {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.birthday_girl {
+  width: 300px;
+  height: 380px;
+  border: 7px solid white;
+  border-bottom: 20px solid white;
+  transform: rotate(3deg);
+}
+.envelope {
+  width: 500px;
+  height: 380px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+/* 1. Full-Screen Backdrop & Centering */
+.Envelope {
+  position: fixed;
+  inset: 0; /* Stretches to cover top, left, bottom, right (0) */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* 2. Make the Envelope Nice and Big */
+.paper_envelope {
+  width: 450px; /* Adjust this to make the envelope larger or smaller */
+  max-width: 80vw;
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.paper_envelope:hover {
+  transform: scale(1.05);
+}
+
+.inst {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+  font-size: 1.3rem;
+  z-index: 3;
+}
+
+/* 3. The Large Cinematic Letter Box */
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 75vw;
+  max-width: 650px;
+  height: 65vh;
+  max-height: 600px;
+  overflow-y: scroll; /* Allows smooth scrolling for your long message */
+  background: #fdfbf7;
+  color: #333;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.close {
+  position: absolute;
+  margin-left: 1000px;
+  margin-bottom: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.letter_content {
+  margin-bottom: 10px;
+  letter-spacing: 1.25px;
+}
+.Shayari {
+  font-weight: 700;
+  border: 1px solid transparent;
+  font-size: 2rem;
+  width: 100px;
+}
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.surprise {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
